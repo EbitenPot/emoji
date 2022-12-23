@@ -1,15 +1,15 @@
-# Ebiten Emoji
+# Emoji
 
-**Alpha version: The API is not stable yet**
+Package emoji provides Emoji images for [Ebitengine](https://github.com/hajimehoshi/ebiten).
 
-Package emoji provides Emoji images for Ebiten.
+> This library is forked from `ebiten/emoji`. The original author has achieved the project. I will update it with `googlefonts/noto-emoji` project.
 
 ![Example](example/screenshot.png)
 
 ## Usage
 
 ```go
-func (*YourGame) Draw(screen *ebiten.Image) {
+func (*Game) Draw(screen *ebiten.Image) {
     screen.DrawImage(emoji.Image("🍣"), nil)
 }
 ```
