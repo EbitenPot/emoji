@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 )
 
-const notoEmojiVersion = "v2020-09-16-unicode13_1"
+const notoEmojiVersion = "v2.038"
 
 func main() {
 	if err := run(); err != nil {
@@ -102,9 +102,13 @@ func prepareNotoEmojiFiles(tmp string) error {
 		}
 		src := filepath.Join(srcpngdir, e.Name())
 		dst := filepath.Join(dstpngdir, e.Name())
-		if err := os.Rename(src, dst); err != nil {
-			return err
+		var cmd *exec.Cmd
+		cmd = exec.Command("mv", src, dst)
+		_, err := cmd.Output()
+		if err != nil {
+			fmt.Println(err)
 		}
+
 	}
 
 	fmt.Printf("Copying README.md and LICENSE\n")
