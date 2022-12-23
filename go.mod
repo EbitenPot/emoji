@@ -1,4 +1,4 @@
-module github.com/ebitenpot/emoji
+module github.com/EbitenPot/emoji
 
 go 1.16
 

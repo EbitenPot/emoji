@@ -3,7 +3,7 @@
 package main
 
 import (
-	"github.com/ebitenpot/emoji"
+	"github.com/EbitenPot/emoji"
 	"github.com/hajimehoshi/ebiten/v2"
 )
 
