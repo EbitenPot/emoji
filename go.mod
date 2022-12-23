@@ -1,5 +1,5 @@
-module github.com/ebiten/emoji
+module github.com/ebitenpot/emoji
 
 go 1.16
 
-require github.com/hajimehoshi/ebiten/v2 v2.1.0
+require github.com/hajimehoshi/ebiten/v2 v2.4.15
